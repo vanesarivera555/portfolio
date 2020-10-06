@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Vanesa's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <h1>My Portfolio</h1>
+      <p>This is my portfolio.</p>
+      <p>Hello I'm Vanesa Rivera. I am from San Antonio, Texas. I have a pet dog, here is a cute picture of him!</p>
+    <img src="/images/Dog.jpg" width="350" height="400">
+      <p>Click here to get a random message about myself!</p>
+      <button onclick="addRandomGreeting()">Hello</button>
+      <div id="greeting-container"></div>
+      <p>About my Background: <p/>
+      <p>I was born and raised in Texas, by immigrant parents. My parents are originially from Mexico, 
+         and are my role models and my motivation for everything that I do.
+         Some of the things that I have learned to value are education and work ethic.
+         I remember my parents at very young age taught me  the importance of those two 
+         things in life. </p>
+      <p>I was first drawn into computer science after a class I took in high school and also because 
+         of a summer immersion program with Girls Who Code, that I attended. 
+         I enjoy being able to create projects and problem solve with Computer Science. I would like 
+         to learning more about software engineering in the future and have more exposure to it. 
+         Currently I study at the University of Texas at San Antonio, and I plan to major in Computer Science. 
+         Some of the things that I enjoy doing outside of class include biking, running and learning to ice skate.
+         A few of the projects that I have worked on include a binary tree projects, and a projects that calculate
+         the distance between two points with user interaction. </p>
+      
+      <p>Here is a link to my LinkedIn <a href="www.linkedin.com/in/vanesa-rivera-3a561b126">link</a></p> 
+      <h1>Vanesa's Gallery </h1>
+      <p>These are some of my favorite pictures!</p>
+       Some of the things that I enjoy photographing include nature, fun trips with my family and my pets. </p>
+   
+          Every year during the winter break my family and I travel down to Queretaro, Mexico to spend the Holidays. I cherrish very beautiful memories from Mexico in my heart, and its my favorite place to travel to</p>  
+      <p> This is a picture of my parents home town in Mexico</p>
+      <img src="/images/queretaro.jpg" width="350" height="400">
+          
+      <p>This is a picture of my family during the Holidays</p>
+      <img src="/images/theFam.JPG" width = "350" height= "350">
+
+      </p>
+      <p> This is a picture of the Grace Hopper Conference that I attended this past year. </p>
+     <img src= "/images/GHC.jpg" width="350" height="250">  
+
+  <p>This is me at the Lincoln Memorial </p>
+      <img src = "/images/lincon.JPG" width="300" height= "300">
+      
+</div>
+    <h4> Leave a comment Below</h4>
+    <p>Type here a comment for me</p>
+     <div onload="getPhraseJSON()"></div>
+     <form action="/data" method "POST">
+          <p>Comments:</p>
+    
+          <textarea name= "text-input"></textarea><br></br>
+          <input type ="submit" />
+    </form><br></br>
+    <ul id="comment-container"></ul>
+</div>
+</body>
+</html>
